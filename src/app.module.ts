@@ -3,10 +3,10 @@ import { AppController } from '@app/app.controller';
 import { AppService } from '@app/app.service';
 import { TagModule } from '@app/tag/tag.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UserModule } from './user/user.module';
+import { UserModule } from '@app/user/user.module';
 import ormconfig from '@app/ormconfig';
 import { AuthMiddleware } from '@app/user/middleware/auth.middleware';
-import { ArticleModule } from './article/article.module';
+import { ArticleModule } from '@app/article/article.module';
 
 @Module({
   imports: [

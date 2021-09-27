@@ -6,7 +6,7 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import { UserService } from './user.service';
+import { UserService } from '@app/user/user.service';
 import { CreateUserDto } from '@app/user/dto/create-user.dto';
 import { UserResponseInterface } from '@app/user/interfaces/userResponse.interface';
 import { AuthUserDto } from '@app/user/dto/auth-user.dto';
