@@ -1,11 +1,4 @@
-import {
-  Body,
-  Controller,
-  Get,
-  Post,
-  Put,
-  UseGuards,
-} from '@nestjs/common';
+import { Body, Controller, Get, Post, Put, UseGuards } from '@nestjs/common';
 import { UserService } from '@app/user/user.service';
 import { CreateUserDto } from '@app/user/dto/create-user.dto';
 import { UserResponseInterface } from '@app/user/interfaces/userResponse.interface';
@@ -15,7 +8,7 @@ import { UserEntity } from '@app/user/entities/user.entity';
 import { AuthGuard } from '@app/user/guards/auth.guard';
 import { UpdateUserDto } from '@app/user/dto/update-user.dto';
 
-@Controller('api/')
+@Controller()
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
